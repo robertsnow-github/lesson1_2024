@@ -1,0 +1,126 @@
+/* using flexbox to handle layout */
+:root {
+    --prim: rgb(143, 24, 24); 
+    --sec: rgb(197, 135, 19);
+    --tert: rgb(180, 170, 119);
+    --font1: "Quicksand", system-ui;
+    --font2: "Bebas Neue", system-ui;
+}
+
+* {box-sizing: border-box;}
+
+/* tag names */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--tert);
+}
+
+/* classes */
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colophon {
+    text-align:center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 94%;
+    /* border: 1px solid black; */
+}
+
+.form {
+    /* padding-top: 15px; */
+    text-align: right;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.search-label {
+    display: none;
+}
+
+.section {
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+}
+
+.text {
+    padding: 0 15px;
+}
+
+/* ids */
+
+#block1, #block2 {
+    width: 45%;
+    padding: 0 15px;
+    /* border: 1px solid green; */
+}
+
+#block5, #block6, #block7 {
+    width: 30%;
+    /* border: 1px solid darkblue; */
+}
+
+#blockText2, #figure1 {
+    width: 45%;
+    /* border: 1px solid rgb(36, 20, 177); */
+}
+
+/* #blockText3, #blockText4 {
+    padding: 0 15px;
+} */
+
+#figure2 {
+    text-align: center;
+}
+
+/* #block1 {
+    order: 2
+}
+
+#block2 {
+    order: 1;
+} */
+
+#header {
+    width: 100%;
+    padding: 8px 0;   
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#myName, #topNav, .form {
+    margin: 0;
+    width: 30%;
+    /* width: calc(100% / 3) */
+    /* border: 1px solid green; */
+}
+
+#row1 {
+    flex-direction: row-reverse;
+}
+
+#section3 .container {
+    display: flex;
+    justify-content: space-between;
+}
