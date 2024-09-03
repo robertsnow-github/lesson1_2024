@@ -46,6 +46,16 @@ body {
     list-style-type: none;
 }
 
+.nav-link {
+    color: var(--prim);
+    text-decoration: none;
+    transition: color .5s ease-in;
+}
+
+.nav-link:hover {
+    color: var(--sec);
+}
+
 .search-label {
     display: none;
 }
